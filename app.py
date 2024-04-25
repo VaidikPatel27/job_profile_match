@@ -24,7 +24,8 @@ with st.sidebar:
 
 
 	if file:
-		outputs = "/Users/bakudi/Vaidik/Projects/match_job_to_profile/.files/CVs"
+		file_name = file.name
+		outputs = "/workspaces/job_profile_match/.files/CVs"
 		path = os.path.join(outputs, f"{file_name}.pdf")
 		file_processing.save_data(path, file.getvalue(), type = 'wb')
 		data = file_processing.pdf_loader(path)
