@@ -1,0 +1,6 @@
+PyPDF2
+numpy
+streamlit
+regex
+nltk
+sentence-transformers
